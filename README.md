@@ -42,6 +42,12 @@ This tutorial lets you index music data (artists and songs) into a local elastic
         }
     }
     ```
-  
 
-
+## Example queries 
+1. Search for songs with containing the word *clementine* in the title 
+2. Limit the number of result and the fields returned in each document
+3. Search for songs by the author Sofie Livebrant
+4. Search for songs containing either of the words *democracy* or *peace*
+5. Search for songs containing either of the words *democracy* or *peace* and an artist name not containing *Bosse*
+6. Search for songs containing the word *danjah* either in the artist or title field 
+7. Try out aggregations by counting the number of songs by each artist in the data set 
