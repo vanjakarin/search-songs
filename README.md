@@ -11,19 +11,19 @@ This tutorial lets you index music data (artists and songs) into a local elastic
 ## Data Import 
 1. Go to your elasticsearch installation and start elasticsearch 
    ```
-   cd path-to-your-installation/elasticsearch-6.3.1
+   cd <path-to-your-installation>/elasticsearch-6.3.1
    bin/elasticsearch (or bin\elasticsearch.bat on Windows) 
     ``` 
 2. Go to your Kibana installation and start kibana 
     ```
-    cd path-to-your-installation/kibana-6.3.1-darwin-x86_64
+    cd <path-to-your-installation>/kibana-6.3.1-darwin-x86_64
     bin/kibana (or bin\kibana.bat on Windows)
     ```
 3. Open the **riteband.conf** file and make sure you understand the contents. Update the file path your local path to the **music-xs.csv** file. 
 4. Start Logstash using the config file. This will index the data into your local elasticsearch index. 
     ```
-   cd path-to-your-installation/logstash-6.3.1
-   bin/logstash -f riteband.conf 
+   cd <path-to-your-installation>/logstash-6.3.1
+   bin/logstash -f <path-to-repo>/riteband.conf 
     ```
     If it worked, the output in your terminal will be something like this: 
    ![terminal](https://github.com/vanjakarin/search-songs/blob/master/logstash-terminal.png)
