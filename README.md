@@ -26,6 +26,7 @@ This tutorial lets you index music data (artists and songs) into a local elastic
    bin/logstash -f riteband.conf 
     ```
     If it worked, the output in your terminal will be something like this: 
+   ![terminal](https://github.com/vanjakarin/search-songs/blob/master/logstash-terminal.png)
 
 ## Explore the data 
 1. Go to Kibana by pointing your browser to `http://localhost:5601`
